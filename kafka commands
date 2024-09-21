@@ -23,6 +23,8 @@ kafka_2.13-3.7.0>.\bin\windows\zookeeper-server-start.bat config\zookeeper.prope
 5. consume all messages in console, produce by producer
 \kafka_2.13-3.7.0>.\bin\windows\kafka-console-consumer.bat --topic mytest --from-begining --bootstrap-server localhost:9092
 
+We can use Kafka messages broker in spring boot application as a producer and consumer
+
 
 1. Kafka is the message broker use to process the stream of messages .
 2. To master the git commands, you have to practice a lot with all git commands, merge, rebase, pick, etc.
