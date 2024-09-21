@@ -1,0 +1,28 @@
+Kafka quixk start commands
+
+1. Start the zookeeper
+kafka_2.13-3.7.0>.\bin\windows\zookeeper-server-start.bat config\zookeeper.properties
+
+-Stop Zookeeper
+\kafka_2.13-3.7.0>.\bin\windows\zookeeper-server-stop.bat
+
+2. Start Kafka server-start
+\kafka_2.13-3.7.0>.\bin\windows\kafka-server-start.bat config\server.properties
+
+-Stop kafka-server
+
+\kafka_2.13-3.7.0>.\bin\windows\kafka-server-stop.bat
+
+3. Create Kafka Topic
+\kafka_2.13-3.7.0>.\bin\windows\kafka-topics.bat --create --topic mytest --replication-factor 1 partitions 1 --bootstrap-server localhost:9092
+\kafka_2.13-3.7.0>.\bin\windows\kafka-topics.bat --list --bootstrap-server localhost:9092 
+
+4. start producer console to publish some messages
+\kafka_2.13-3.7.0>.\bin\windows\kafka-console-producer.bat --topic mytest --bootstrap-server localhost:9092
+
+5. consume all messages in console, produce by producer
+\kafka_2.13-3.7.0>.\bin\windows\kafka-console-consumer.bat --topic mytest --from-begining --bootstrap-server localhost:9092
+
+
+
+
