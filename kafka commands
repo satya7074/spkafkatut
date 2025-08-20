@@ -23,6 +23,8 @@ kafka_2.13-3.7.0>.\bin\windows\zookeeper-server-start.bat config\zookeeper.prope
 5. consume all messages in console, produce by producer
 \kafka_2.13-3.7.0>.\bin\windows\kafka-console-consumer.bat --topic mytest --from-begining --bootstrap-server localhost:9092
 
+// We need to learn following topics, partion, group, offset etc in details
+
 
 
 
